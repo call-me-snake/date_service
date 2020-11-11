@@ -1,0 +1,11 @@
+version: '3.5'
+
+services:
+
+  server:
+    build: .
+    ports:
+      - 8002:8002
+    environment:
+      HTTP: ":8002"
+    command: /bin/sh -c "./app"
