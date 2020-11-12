@@ -1,0 +1,2 @@
+mockgen:
+mockgen "-source=internal/model/model.go" "-destination=internal/model/mock/mock_Itime.go"

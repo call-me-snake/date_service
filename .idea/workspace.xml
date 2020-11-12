@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b32a8777-f8c8-44a9-b42c-0aa72e4e354f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/httpServer/handlers_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/convert/convert.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/convert/convert.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/convert/convert_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/convert/convert_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/httpServer/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/httpServer/handlers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/model/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/model/model.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +21,6 @@
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GoLibraries">
-    <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="1k7Atj4eGlhuPLrjexLuRgcWMSa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -49,7 +42,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build github.com/call-me-snake/date_service/cmd">
+  <component name="RunManager" selected="Go Test.TestCorrectTime in github.com/call-me-snake/date_service/internal/httpServer">
     <configuration name="go build github.com/call-me-snake/date_service/cmd" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="date_service" />
       <working_directory value="$PROJECT_DIR$" />
@@ -59,57 +52,57 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestFloat64ToDurationFail in github.com/call-me-snake/date_service/internal/convert" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAddTime in github.com/call-me-snake/date_service/internal/httpServer" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="date_service" />
-      <working_directory value="$PROJECT_DIR$/internal/convert" />
+      <working_directory value="$PROJECT_DIR$/internal/httpServer" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="github.com/call-me-snake/date_service/internal/convert" />
+      <package value="github.com/call-me-snake/date_service/internal/httpServer" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestFloat64ToDurationFail\E$" />
+      <pattern value="^\QTestAddTime\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestFloat64ToDurationSuccess in github.com/call-me-snake/date_service/internal/convert" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCorrectTime in github.com/call-me-snake/date_service/internal/httpServer" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="date_service" />
-      <working_directory value="$PROJECT_DIR$/internal/convert" />
+      <working_directory value="$PROJECT_DIR$/internal/httpServer" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="github.com/call-me-snake/date_service/internal/convert" />
+      <package value="github.com/call-me-snake/date_service/internal/httpServer" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestFloat64ToDurationSuccess\E$" />
+      <pattern value="^\QTestCorrectTime\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestFloat64ToTimeFail in github.com/call-me-snake/date_service/internal/convert" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestTimeNow in github.com/call-me-snake/date_service/internal/httpServer" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="date_service" />
-      <working_directory value="$PROJECT_DIR$/internal/convert" />
+      <working_directory value="$PROJECT_DIR$/internal/httpServer" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="github.com/call-me-snake/date_service/internal/convert" />
+      <package value="github.com/call-me-snake/date_service/internal/httpServer" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestFloat64ToTimeFail\E$" />
+      <pattern value="^\QTestTimeNow\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestFloat64ToTimeSuccess in github.com/call-me-snake/date_service/internal/convert" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestTimeToString in github.com/call-me-snake/date_service/internal/httpServer" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="date_service" />
-      <working_directory value="$PROJECT_DIR$/internal/convert" />
+      <working_directory value="$PROJECT_DIR$/internal/httpServer" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="github.com/call-me-snake/date_service/internal/convert" />
+      <package value="github.com/call-me-snake/date_service/internal/httpServer" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestFloat64ToTimeSuccess\E$" />
+      <pattern value="^\QTestTimeToString\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestCorrectTime in github.com/call-me-snake/date_service/internal/httpServer" />
+        <item itemvalue="Go Test.TestAddTime in github.com/call-me-snake/date_service/internal/httpServer" />
+        <item itemvalue="Go Test.TestTimeToString in github.com/call-me-snake/date_service/internal/httpServer" />
+        <item itemvalue="Go Test.TestTimeNow in github.com/call-me-snake/date_service/internal/httpServer" />
         <item itemvalue="Go Build.go build github.com/call-me-snake/date_service/cmd" />
-        <item itemvalue="Go Test.TestFloat64ToDurationFail in github.com/call-me-snake/date_service/internal/convert" />
-        <item itemvalue="Go Test.TestFloat64ToDurationSuccess in github.com/call-me-snake/date_service/internal/convert" />
-        <item itemvalue="Go Test.TestFloat64ToTimeFail in github.com/call-me-snake/date_service/internal/convert" />
-        <item itemvalue="Go Test.TestFloat64ToTimeSuccess in github.com/call-me-snake/date_service/internal/convert" />
       </list>
     </recent_temporary>
   </component>
@@ -118,41 +111,56 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1605168988617">
+    <state x="172" y="127" width="1648" height="853" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1605178156509">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1605168988617" />
-    <state width="1802" height="383" key="GridCell.Tab.0.bottom" timestamp="1605126542676">
+    <state x="172" y="127" width="1648" height="853" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1605178156509" />
+    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1605174986405">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="383" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1605126542676" />
-    <state width="1802" height="383" key="GridCell.Tab.0.center" timestamp="1605126542676">
+    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1605174986405" />
+    <state width="1802" height="380" key="GridCell.Tab.0.bottom" timestamp="1605178223064">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="383" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1605126542676" />
-    <state width="1802" height="383" key="GridCell.Tab.0.left" timestamp="1605126542676">
+    <state width="1802" height="380" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1605178223064" />
+    <state width="1802" height="380" key="GridCell.Tab.0.center" timestamp="1605178223064">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="383" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1605126542676" />
-    <state width="1802" height="383" key="GridCell.Tab.0.right" timestamp="1605126542676">
+    <state width="1802" height="380" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1605178223064" />
+    <state width="1802" height="380" key="GridCell.Tab.0.left" timestamp="1605178223064">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="383" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1605126542676" />
-    <state width="1802" height="334" key="GridCell.Tab.1.bottom" timestamp="1605126542672">
+    <state width="1802" height="380" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1605178223064" />
+    <state width="1802" height="380" key="GridCell.Tab.0.right" timestamp="1605178223064">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="334" key="GridCell.Tab.1.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1605126542672" />
-    <state width="1802" height="334" key="GridCell.Tab.1.center" timestamp="1605126542671">
+    <state width="1802" height="380" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1605178223064" />
+    <state width="1802" height="334" key="GridCell.Tab.1.bottom" timestamp="1605178159076">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="334" key="GridCell.Tab.1.center/72.27.1848.1053@72.27.1848.1053" timestamp="1605126542671" />
-    <state width="1802" height="334" key="GridCell.Tab.1.left" timestamp="1605126542671">
+    <state width="1802" height="334" key="GridCell.Tab.1.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1605178159076" />
+    <state width="1802" height="334" key="GridCell.Tab.1.center" timestamp="1605178159075">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="334" key="GridCell.Tab.1.left/72.27.1848.1053@72.27.1848.1053" timestamp="1605126542671" />
-    <state width="1802" height="334" key="GridCell.Tab.1.right" timestamp="1605126542671">
+    <state width="1802" height="334" key="GridCell.Tab.1.center/72.27.1848.1053@72.27.1848.1053" timestamp="1605178159075" />
+    <state width="1802" height="334" key="GridCell.Tab.1.left" timestamp="1605178159075">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="334" key="GridCell.Tab.1.right/72.27.1848.1053@72.27.1848.1053" timestamp="1605126542671" />
+    <state width="1802" height="334" key="GridCell.Tab.1.left/72.27.1848.1053@72.27.1848.1053" timestamp="1605178159075" />
+    <state width="1802" height="334" key="GridCell.Tab.1.right" timestamp="1605178159075">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="334" key="GridCell.Tab.1.right/72.27.1848.1053@72.27.1848.1053" timestamp="1605178159075" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/internal/httpServer/handlers_test.go</url>
+          <line>73</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
