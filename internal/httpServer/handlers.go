@@ -45,7 +45,7 @@ func timeToString() http.HandlerFunc {
 
 		ttime, err := convert.Float64ToTime(toStringRequest.Time64)
 		if err != nil {
-			makeErrResponce(fmt.Sprintf("Параметр запроса Time64: %f имеет некорректый формат для конвертации", toStringRequest.Time64), http.StatusBadRequest, w)
+			makeErrResponce(fmt.Sprintf("Параметр запроса Time64: %f имеет некорректный формат для конвертации", toStringRequest.Time64), http.StatusBadRequest, w)
 			return
 		}
 		timeInfo := timeStringMessage{}
@@ -80,13 +80,13 @@ func addTime() http.HandlerFunc {
 
 		ttime, err := convert.Float64ToTime(request.Time64)
 		if err != nil {
-			makeErrResponce(fmt.Sprintf("Параметр запроса Time64: %f имеет некорректый формат для конвертации", request.Time64), http.StatusBadRequest, w)
+			makeErrResponce(fmt.Sprintf("Параметр запроса Time64: %f имеет некорректный формат для конвертации", request.Time64), http.StatusBadRequest, w)
 			return
 		}
 
 		delta, err := convert.Float64ToDuration(request.Delta)
 		if err != nil {
-			makeErrResponce(fmt.Sprintf("Параметр запроса Delta: %f имеет некорректый формат для конвертации", request.Delta), http.StatusBadRequest, w)
+			makeErrResponce(fmt.Sprintf("Параметр запроса Delta: %f имеет некорректный формат для конвертации", request.Delta), http.StatusBadRequest, w)
 			return
 		}
 		resultTime := ttime.Add(delta)
@@ -118,7 +118,7 @@ func correctTime(serverTime model.Itime) http.HandlerFunc {
 
 		ttime, err := convert.Float64ToTime(request.Time64)
 		if err != nil {
-			makeErrResponce(fmt.Sprintf("Параметр запроса Time64: %f имеет некорректый формат для конвертации", request.Time64), http.StatusBadRequest, w)
+			makeErrResponce(fmt.Sprintf("Параметр запроса Time64: %f имеет некорректный формат для конвертации", request.Time64), http.StatusBadRequest, w)
 			return
 		}
 		serverTime.Correct(ttime)
