@@ -13,13 +13,14 @@ const defaultFStringLength = 16
 
 //TimeToFloat64 - перевод time.Time в float64
 func TimeToFloat64(ttime time.Time) (ftime float64) {
-	ftime = float64(ttime.Year()%100) * 10000                  //year
-	ftime += float64(ttime.Month()) * 100                      //month
-	ftime += float64(ttime.Day())                              //day
-	ftime += float64(ttime.Hour()) * 0.01                      //hour
-	ftime += float64(ttime.Minute()) * 0.0001                  //minute
-	ftime += float64(ttime.Second()) * 0.000001                //second
-	ftime += float64(ttime.Nanosecond()/1000000) * 0.000000001 //millisecond
+	s := ttime.Format("060102.150405.999")
+	if len(s) > 13{
+		s = s[:13] + s[14:]
+	}
+	ftime, err := strconv.ParseFloat(s, 64)
+	if err != nil {
+		log.Print(err)
+	}
 	return
 }
 

@@ -1,7 +1,6 @@
 package model
 
 import (
-	"fmt"
 	"time"
 )
 
@@ -11,24 +10,24 @@ type Itime interface {
 	Correct(t time.Time)
 }
 
-//MyTime - структура, реализующая ITime
-type MyTime struct {
+//TimeData - структура, реализующая ITime
+type TimeData struct {
 	timeDelta time.Duration
 }
 
 //Now - получение времени сервера
-func (myTime *MyTime) Now() time.Time {
-	fmt.Println("now")
-	fmt.Println(myTime.timeDelta)
-	fmt.Println(time.Now().Add(myTime.timeDelta).Format(time.RFC1123))
-	return time.Now().Add(myTime.timeDelta)
+func (timeData *TimeData) Now() time.Time {
+	//fmt.Println("now")
+	//fmt.Println(timeData.timeDelta)
+	//fmt.Println(time.Now().Add(timeData.timeDelta).Format(time.RFC1123))
+	return time.Now().Add(timeData.timeDelta)
 }
 
 //Correct - корректировка времени сервера
-func (myTime *MyTime) Correct(t time.Time) {
-	fmt.Println("correct")
-	fmt.Println(myTime.timeDelta)
-	fmt.Println("t:+ " + t.Format(time.RFC1123))
-	fmt.Println("now: " + time.Now().Format(time.RFC1123))
-	myTime.timeDelta = t.Sub(time.Now())
+func (timeData *TimeData) Correct(t time.Time) {
+	//fmt.Println("correct")
+	//fmt.Println(timeData.timeDelta)
+	//fmt.Println("t:+ " + t.Format(time.RFC1123))
+	//fmt.Println("now: " + time.Now().Format(time.RFC1123))
+	timeData.timeDelta = t.Sub(time.Now())
 }

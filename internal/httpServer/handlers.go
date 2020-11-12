@@ -64,6 +64,10 @@ func timeToString() http.HandlerFunc {
 	}
 }
 
+//addTime - ручка добавления времени. Параметр запроса:
+//{"Time64":201111.1800,"Delta":-0.000101}
+//Time64 имеет стандартные ограничения по мм, дд, ч, мин, сек
+//Delta не принимает годы, месяцы, имеет ограничение дд<=99 , стандартные ограничения по ч, мин, сек
 func addTime() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		request := &addTimeRequest{}

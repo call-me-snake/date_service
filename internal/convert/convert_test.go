@@ -23,11 +23,11 @@ func TestTimeToFloat64(t *testing.T) {
 	}
 
 	for i, val := range testTimeSlice {
-		fmt.Printf("Test %d", i+1)
+		fmt.Printf("Test %d\n", i+1)
 		f := TimeToFloat64(val)
 		//избегаю ошибки округления
 		if f-verifySlice[i] >= 0.000000001 {
-			t.Errorf("Not equal:\nexpected: %f\nactual: %f", verifySlice[i], f)
+			t.Errorf("Not equal:\nexpected: %0.9f\nactual: %0.9f", verifySlice[i], f)
 		}
 	}
 }

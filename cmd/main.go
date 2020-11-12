@@ -9,7 +9,7 @@ import (
 )
 
 type envs struct {
-	ServerAddress string `long:"http" env:"HTTP" description:"address of microservice" default:":8002"`
+	ServerPort int `long:"port" env:"PORT" description:"port of microservice" default:"8002"`
 }
 
 func getEnvs() (envs, error) {
@@ -28,8 +28,8 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	s := httpServer.New(environments.ServerAddress)
-	err = s.Start(&model.MyTime{})
+	s := httpServer.New(fmt.Sprintf(":%d", environments.ServerPort))
+	err = s.Start(&model.TimeData{})
 	if err != nil {
 		log.Fatal(err)
 	}
